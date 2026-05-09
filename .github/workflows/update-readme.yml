@@ -1,21 +1,30 @@
-name: Update README with latest repos
+name: Update README
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  update-readme:
+  update:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Update README
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          comment_tag_name: "BLOG-POST-LIST"
-          feed_list: "https://github.com/shaikrohit.atom"
-          max_post_count: 6
+      - name: Generate Repo List
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update README"
+          git push
