@@ -29,37 +29,10 @@ Computer Engineering Student building practical products and scalable web experi
 React • JavaScript • Docker • Git • GitHub • HTML • CSS
 ```
 
----
-
-## Latest Projects
-
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
-
----
-
-## GitHub Overview
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=shaikrohit&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shaikrohit&layout=compact&theme=transparent&hide_border=true" />
-
-</div>
-
----
-
-## Activity
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=shaikrohit&theme=github-compact&hide_border=true" />
-
----
-
 ## Connect
 
-- Portfolio: https://shaikrohit.tech
-- GitHub: https://github.com/shaikrohit
+- <a href="https://shaikrohit.tech">Portfolio</a>
+- <a href="https://github.com/shaikrohit">GitHub</a>
 
 ---
 
