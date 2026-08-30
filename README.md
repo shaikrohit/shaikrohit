@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="profile.jpg" alt="Rohit Shaik" width="150" style="border-radius: 50%; object-fit: cover;" />
+
 
 # Rohit Shaik
 
